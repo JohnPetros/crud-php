@@ -12,6 +12,7 @@ session_start();
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src/favicon_io/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="src/css/global.css?=<?= time() ?>">
   <link rel="stylesheet" href="src/css/message.css?=<?= time() ?>">
   <link rel="stylesheet" href="src/css/modal.css?=<?= time() ?>">
