@@ -29,7 +29,7 @@
 
 ## 💻 Projeto
 
-CRUD simples de dados de usuários feito em PHP + MySQL.
+CRUD simples em PHP + MySQL desenvolvido como tarefa para disciplina de programação web na Etec.
 
 ## ✅ Demonstração
 
