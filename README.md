@@ -2,10 +2,22 @@
     CRUD de usuários
 </h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/last%20commit-november-blue" />
-  <img src="https://img.shields.io/badge/license-MIT-success"/>
-</p>
+<div align="center">
+   <a href="https://github.com/JohnPetros">
+      <img alt="Made by JohnPetros" src="https://img.shields.io/badge/made%20by-JohnPetros-yellow">
+   </a>
+   <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/JohnPetros/crud-php">
+   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/JohnPetros/crud-php">
+   <a href="https://github.com/JohnPetros/crud-php/commits/main">
+      <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/JohnPetros/crud-php">
+   </a>
+  </a>
+   </a>
+   <a href="https://github.com/JohnPetros/crud-php/blob/main/LICENSE.md">
+      <img alt="GitHub License" src="https://img.shields.io/github/license/JohnPetros/crud-php">
+   </a>
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/JohnPetros/crud-php?style=social">
+</div>
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,13 +28,14 @@
 </p>
 
 ## 💻 Projeto
-Projeto CRUD simples em PHP + MySQL feito como tarefa em programação web na Etec.
+
+CRUD simples de dados de usuários feito em PHP + MySQL.
 
 ## ✅ Demonstração
 
-![CRUD - PHP - Google Chrome 03_12_2022 23_49_45](https://user-images.githubusercontent.com/93893533/205471951-99e4b12f-75a4-4e11-bc12-16e1b7ce73af.png)
-![New Issue · JohnPetros_crud-php - Google Chrome 03_12_2022 23_57_50](https://user-images.githubusercontent.com/93893533/205472008-5df3c83c-bcb9-4e86-8124-da41671780f6.png)
-![CRUD - PHP - Google Chrome 04_12_2022 01_18_51](https://user-images.githubusercontent.com/93893533/205474282-f3d0cdf8-f09d-41e6-91a5-41bc7a7b3541.png)
+![CRUD - PHP - Google Chrome 04_12_2022 12_14_46](https://user-images.githubusercontent.com/93893533/205498911-3ca8dbd6-3458-4671-85f2-a7747fcfcfa0.png)
+![CRUD - PHP - Google Chrome 04_12_2022 12_13_39](https://user-images.githubusercontent.com/93893533/205498913-5a7ecb30-6d64-470e-b272-a32b0ad26ac0.png)
+![CRUD - PHP - Google Chrome 04_12_2022 12_16_11](https://user-images.githubusercontent.com/93893533/205498912-5e2467b3-8b83-49ac-bce8-e5491b8d8c91.png)
 
 <hr>
 
@@ -36,12 +49,17 @@ Projeto CRUD simples em PHP + MySQL feito como tarefa em programação web na Et
 - Sistema de validação nos formulários, tanto de inclusão quanto de deleção
 - Implementação de anti SQL Injection no CRUD
 
+<hr>
+
 ## 📖 Aprendizado
 
 - Como fazer conexão do PHP com banco de dados MySQL
 - Como usar sessões em PHP (para exibição de flashmessages e persistência de informações)
 - Como usar prepare statement para evitar SQL Injection
 - Como converter uma nodeList em array com o método from
+- Efeito de Table Striped com CSS
+
+<hr>
 
 ## 🚀 Tecnologias
 
@@ -52,6 +70,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - JavaScript
 - CSS
 - HTML
+
+<hr>
 
 ## :memo: Licença
 

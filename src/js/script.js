@@ -1,19 +1,27 @@
-const modal = document.querySelector(".modal");
-const closeButton = document.querySelector(".modal .close");
+const updateModal = document.querySelector(".update-modal");
+const closeButtons = document.querySelectorAll(".close");
 const fade = document.querySelector(".fade");
 const updateButtons = document.querySelectorAll(".button.update");
-const deleteButton = document.querySelectorAll(".button.delete");
+const deleteButtons = document.querySelectorAll(".button.delete");
+const deleteModal = document.querySelector(".delete-modal");
 
-const toggleModal = () => {
-  [modal, fade].forEach((element) => element.classList.toggle("hidden"));
+const openElement = (elementName) => {
+  const element = elementName === "update-modal" ? updateModal : deleteModal;
+  [element, fade].forEach((element) => element.classList.remove("hidden"));
+};
+
+const closeAllElements = () => {
+  [updateModal, deleteModal, fade].forEach((element) =>
+    element.classList.add("hidden")
+  );
 };
 
 const insertIntoModal = (data) => {
   for (const [key, value] of Object.entries(data)) {
-    const input = modal.querySelector(`input[name='update-${key}']`);
+    const input = updateModal.querySelector(`input[name='update-${key}']`);
     input.value = value;
   }
-  toggleModal();
+  openElement("update-modal");
 };
 
 const getUserData = (event) => {
@@ -33,32 +41,35 @@ const getUserData = (event) => {
 };
 
 const handleDelete = (event) => {
-  if (!confirm("Deseja mesmo apagar esse registro?")) event.preventDefault();
+  const id = event.target.id;
+  const confirmDeleteButton = deleteModal.querySelector(".delete");
+  openElement("delete-modal");
+
+  confirmDeleteButton.addEventListener(
+    "click",
+    () => (location.href = "./src/actions/delete.php?id=" + id)
+  );
 };
 
 const verifyIfHasUsers = () => {
   const container = document.querySelector(".container");
   const thead = document.querySelector("thead");
   const areThereUsers = container.querySelector(".empty");
-
-  console.log(areThereUsers);
-  if (areThereUsers) {
-    thead.classList.add("hidden");
-  } else {
-    thead.classList.remove("hidden");
-  }
+  areThereUsers
+    ? thead.classList.add("hidden")
+    : thead.classList.remove("hidden");
 };
 
 updateButtons.forEach((button) =>
   button.addEventListener("click", getUserData)
 );
 
-[closeButton, fade].forEach((element) =>
-  element.addEventListener("click", toggleModal)
+[...closeButtons, fade].forEach((element) =>
+  element.addEventListener("click", closeAllElements)
 );
 
-deleteButton.forEach((button) =>
+deleteButtons.forEach((button) =>
   button.addEventListener("click", handleDelete)
 );
 
-window.addEventListener('load', verifyIfHasUsers)
+window.addEventListener("load", verifyIfHasUsers);

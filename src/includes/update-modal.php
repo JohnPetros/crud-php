@@ -1,6 +1,4 @@
- <div class="fade hidden"></div>
-
-<form action="./src/actions/update.php" method="post" class="modal hidden">
+<form action="./src/actions/update.php" method="post" class="update-modal hidden">
   <header>
     <h3>Atualizar usuário</h3>
     <button type="button" class="close">&times;</button>

@@ -14,7 +14,7 @@ if (mysqli_num_rows($data) > 0) {
             <button id="' . $user['id'] . '" class="button update" type="button">editar</button>
             </td>
             <td colspan="2">
-            <a href="./src/actions/delete.php?id=' . $user['id'] . '" class="button delete" type="button">deletar</a>
+            <button id="' . $user['id'] . '" class="button delete" type="button">deletar</button>
             </td>
         </tr>
         ';

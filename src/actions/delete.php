@@ -7,6 +7,8 @@ require_once '../db/connect.php';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
+    echo $id;
+
     $stmt = $connect->prepare("DELETE FROM user WHERE id = ?");
     $stmt->bind_param("s", $id);
     if (!$stmt->execute()) {
